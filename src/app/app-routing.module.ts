@@ -4,8 +4,10 @@ import { TracklistComponent } from './tracklist/tracklist.component';
 import { VideoComponent } from './video/video.component';
 
 const routes: Routes = [
+  { path: '', component: TracklistComponent },
   { path: 'tracklist', component: TracklistComponent },
   { path: 'video', component: VideoComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
